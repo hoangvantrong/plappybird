@@ -99,7 +99,7 @@
     ctx.fillRect(0, 0, W, H);
 
     const t = performance.now();
-    ctx.fillStyle = "rgba(34, 211, 238, 0.06)";
+    ctx.fillStyle = "rgba(167, 139, 250, 0.06)";
     for (let i = 0; i < 6; i++) {
       const bx = ((i * 137 + (t * 0.02) % 200) % (W + 80)) - 40;
       const by = H * 0.55 + Math.sin(i + t * 0.001) * 8;
@@ -110,7 +110,7 @@
 
     ctx.fillStyle = "#27272a";
     ctx.fillRect(0, H - 56, W, 56);
-    ctx.fillStyle = "#22d3ee";
+    ctx.fillStyle = "#6366f1";
     ctx.fillRect(0, H - 56, W, 2);
     ctx.fillStyle = "#18181b";
     ctx.fillRect(0, H - 54, W, 6);
@@ -119,7 +119,7 @@
   function drawPipes() {
     for (const p of pipes) {
       ctx.fillStyle = "#2d2d33";
-      ctx.strokeStyle = "#0891b2";
+      ctx.strokeStyle = "#7c6cf0";
       ctx.lineWidth = 2;
       ctx.fillRect(p.x, 0, PIPE_W, p.topH);
       ctx.strokeRect(p.x, 0, PIPE_W, p.topH);
